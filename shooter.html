@@ -174,7 +174,7 @@ const SPRITES = {
       [0,0,1,1,0,1,1,0,0,0,0,0],
       [0,1,1,0,0,0,1,1,0,0,0,0],
     ],
-    // frame 1 (walk2)
+    // frame 1 (walk2 - right stride)
     [
       [0,0,0,1,1,1,1,0,0,0,0,0],
       [0,0,1,2,2,2,2,1,0,0,0,0],
@@ -189,6 +189,36 @@ const SPRITES = {
       [0,0,1,1,0,0,1,1,0,0,0,0],
       [0,0,0,1,0,1,1,0,0,0,0,0],
     ],
+    // frame 2 (walk3 - left foot forward)
+    [
+      [0,0,0,1,1,1,1,0,0,0,0,0],
+      [0,0,1,2,2,2,2,1,0,0,0,0],
+      [0,0,1,3,2,2,3,1,0,0,0,0],
+      [0,0,0,1,1,1,1,0,0,0,0,0],
+      [0,0,1,2,2,2,2,1,0,0,0,0],
+      [0,1,2,2,2,2,2,2,1,0,0,0],
+      [0,1,2,2,2,2,2,2,1,0,0,0],
+      [0,0,1,2,2,2,2,1,0,0,0,0],
+      [0,0,1,2,2,2,2,1,0,0,0,0],
+      [0,0,0,1,1,0,1,1,0,0,0,0],
+      [0,0,1,1,0,0,1,1,0,0,0,0],
+      [0,0,1,1,0,0,0,1,0,0,0,0],
+    ],
+    // frame 3 (walk4 - passing neutral mirror)
+    [
+      [0,0,0,1,1,1,1,0,0,0,0,0],
+      [0,0,1,2,2,2,2,1,0,0,0,0],
+      [0,0,1,3,2,2,3,1,0,0,0,0],
+      [0,0,0,1,1,1,1,0,0,0,0,0],
+      [0,0,1,2,2,2,2,1,0,0,0,0],
+      [0,1,2,2,2,2,2,2,1,0,0,0],
+      [0,1,2,2,2,2,2,2,1,0,0,0],
+      [0,0,1,2,2,2,2,1,0,0,0,0],
+      [0,0,1,2,2,2,2,1,0,0,0,0],
+      [0,0,1,1,0,0,1,0,0,0,0,0],
+      [0,0,1,1,0,1,1,0,0,0,0,0],
+      [0,1,1,0,0,0,1,0,0,0,0,0],
+    ],
   ],
   grunt: [
     [
@@ -201,6 +231,16 @@ const SPRITES = {
       [0,1,2,2,2,2,1,0,0,0],
       [0,0,1,1,1,1,0,0,0,0],
     ],
+    [
+      [0,0,1,1,1,1,0,0,0,0],
+      [0,1,2,2,2,2,1,0,0,0],
+      [1,2,3,2,2,3,2,1,0,0],
+      [1,2,2,2,2,2,2,1,0,0],
+      [1,2,2,2,2,2,2,1,0,0],
+      [1,2,1,2,2,1,2,1,0,0],
+      [0,1,2,2,2,2,1,0,0,0],
+      [0,0,1,1,1,1,0,0,0,0],
+    ],
   ],
   dasher: [
     [
@@ -210,6 +250,17 @@ const SPRITES = {
       [0,1,2,2,3,2,2,1,0,0],
       [1,2,2,3,3,3,2,2,1,0],
       [0,1,2,2,3,2,2,1,0,0],
+      [0,0,1,2,2,2,1,0,0,0],
+      [0,0,0,1,2,1,0,0,0,0],
+      [0,0,0,0,1,0,0,0,0,0],
+    ],
+    [
+      [0,0,0,0,1,0,0,0,0,0],
+      [0,0,0,1,2,1,0,0,0,0],
+      [0,0,1,2,2,2,1,0,0,0],
+      [0,1,2,3,3,3,2,1,0,0],
+      [1,2,3,3,3,3,3,2,1,0],
+      [0,1,2,3,3,3,2,1,0,0],
       [0,0,1,2,2,2,1,0,0,0],
       [0,0,0,1,2,1,0,0,0,0],
       [0,0,0,0,1,0,0,0,0,0],
@@ -228,12 +279,33 @@ const SPRITES = {
       [1,2,2,2,2,2,2,2,2,2,2,1],
       [1,1,1,1,1,1,1,1,1,1,1,1],
     ],
+    [
+      [1,1,1,1,1,1,1,1,1,1,1,1],
+      [1,2,2,2,2,2,2,2,2,2,2,1],
+      [1,2,2,1,2,2,2,2,1,2,2,1],
+      [1,2,2,2,2,1,1,2,2,2,2,1],
+      [1,2,2,2,1,3,3,1,2,2,2,1],
+      [1,2,2,2,1,3,3,1,2,2,2,1],
+      [1,2,2,2,2,1,1,2,2,2,2,1],
+      [1,2,2,1,2,2,2,2,1,2,2,1],
+      [1,2,2,2,2,2,2,2,2,2,2,1],
+      [1,1,1,1,1,1,1,1,1,1,1,1],
+    ],
   ],
   shooter: [
     [
       [0,0,1,1,1,1,0,0,0,0],
       [0,1,2,2,2,2,1,0,0,0],
       [1,2,3,2,2,3,2,1,0,0],
+      [1,2,2,2,2,2,2,1,0,0],
+      [1,2,2,2,2,2,2,1,0,0],
+      [0,1,2,2,2,2,1,0,0,0],
+      [0,0,1,1,1,1,0,0,0,0],
+    ],
+    [
+      [0,0,1,1,1,1,0,0,0,0],
+      [0,1,2,2,2,2,1,0,0,0],
+      [1,2,2,3,3,2,2,1,0,0],
       [1,2,2,2,2,2,2,1,0,0],
       [1,2,2,2,2,2,2,1,0,0],
       [0,1,2,2,2,2,1,0,0,0],
@@ -267,6 +339,15 @@ function drawSprite(data, palette, x, y, angle, scale, flash) {
     }
   }
   ctx.restore();
+}
+
+function cycleAnim(entity, dt, frameCount, frameRate) {
+  entity.animTimer += dt;
+  if (entity.animTimer > 1 / frameRate) {
+    entity.animTimer = 0;
+    entity.animFrame = (entity.animFrame + 1) % frameCount;
+  }
+  return entity.animFrame;
 }
 
 // ============================================================
@@ -340,6 +421,9 @@ function createEnemy(type, x, y) {
     chargeState: 'seek', chargeCooldown: 0, chargeDir: 0,
     shootTimer: type === 3 ? rng(1.5, 2.5) : 0,
     boss: false, bossHpMax: 0,
+    animFrame: 0, animTimer: 0,
+    knockbackX: 0, knockbackY: 0,
+    dying: false, deathTimer: 0,
   };
 }
 
@@ -359,6 +443,7 @@ function createBoss(hp) {
   e.speed = 35;
   e.score = 1000;
   e.shootTimer = 1;
+  e.phase = 0;
   return e;
 }
 
@@ -403,7 +488,8 @@ function resetGame() {
   game.player = {
     x: W / 2, y: H / 2, angle: 0, hp: PLAYER_MAX_HP, maxHp: PLAYER_MAX_HP,
     invincible: 0, shootCooldown: 0, animFrame: 0, animTimer: 0,
-    muzzleFlash: 0, moving: false,
+    muzzleFlash: 0, moving: false, recoilOffset: 0,
+    dying: false, deathTimer: 0,
   };
   game.bullets = [];
   game.enemies = [];
@@ -520,8 +606,7 @@ function updatePlaying(dt) {
   p.moving = dx !== 0 || dy !== 0;
 
   if (p.moving) {
-    p.animTimer += dt;
-    if (p.animTimer > 0.15) { p.animTimer = 0; p.animFrame = 1 - p.animFrame; }
+    cycleAnim(p, dt, 4, 8);
   } else {
     p.animFrame = 0;
     p.animTimer = 0;
@@ -533,9 +618,11 @@ function updatePlaying(dt) {
   // Shooting
   p.shootCooldown -= dt;
   p.muzzleFlash -= dt;
+  p.recoilOffset = Math.max(0, p.recoilOffset - dt * 60);
   if (input.mouseDown && p.shootCooldown <= 0) {
     p.shootCooldown = SHOOT_COOLDOWN;
     p.muzzleFlash = 0.06;
+    p.recoilOffset = 3;
     game.shotsFired++;
     const tipX = p.x + Math.cos(p.angle) * 14;
     const tipY = p.y + Math.sin(p.angle) * 14;
@@ -582,7 +669,26 @@ function updatePlaying(dt) {
   // Update enemies
   for (const e of game.enemies) {
     if (!e.alive) continue;
+    if (e.dying) {
+      e.deathTimer -= dt;
+      if (e.deathTimer <= 0) {
+        e.alive = false;
+        const col = PALETTES[e.sprite] ? PALETTES[e.sprite][2] : '#ff4444';
+        spawnParticles(e.x, e.y, e.boss ? 30 : 10, col, e.boss ? 150 : 100, e.boss ? 0.6 : 0.4);
+        triggerShake(e.boss ? 8 : 2, e.boss ? 0.3 : 0.08);
+      }
+      continue;
+    }
     e.flash -= dt;
+    e.x += e.knockbackX;
+    e.y += e.knockbackY;
+    e.knockbackX *= Math.max(0, 1 - dt * 15);
+    e.knockbackY *= Math.max(0, 1 - dt * 15);
+    if (e.type === 1 && e.chargeState === 'charge') {
+      cycleAnim(e, dt, 2, 8);
+    } else {
+      cycleAnim(e, dt, 2, 3);
+    }
     const toPlayer = angleTo(e.x, e.y, p.x, p.y);
     e.angle = toPlayer;
 
@@ -591,6 +697,12 @@ function updatePlaying(dt) {
       if (e.chargeState === 'seek') {
         e.x += Math.cos(toPlayer) * e.speed * dt;
         e.y += Math.sin(toPlayer) * e.speed * dt;
+        e.chargeTimer -= dt;
+        if (e.chargeTimer <= 0) {
+          e.chargeState = 'windup';
+          e.chargeTimer = 0.3;
+        }
+      } else if (e.chargeState === 'windup') {
         e.chargeTimer -= dt;
         if (e.chargeTimer <= 0) {
           e.chargeState = 'charge';
@@ -684,23 +796,31 @@ function updatePlaying(dt) {
   for (const b of game.bullets) {
     if (!b.alive || b.isEnemy) continue;
     for (const e of game.enemies) {
-      if (!e.alive) continue;
+      if (!e.alive || e.dying) continue;
       if (dist(b.x, b.y, e.x, e.y) < e.radius + 2) {
         b.alive = false;
         e.hp--;
         e.flash = 0.08;
         game.shotsHit++;
+        const bAngle = Math.atan2(b.vy, b.vx);
+        e.knockbackX = Math.cos(bAngle) * 3;
+        e.knockbackY = Math.sin(bAngle) * 3;
         spawnParticles(b.x, b.y, 3, '#ffff88', 50, 0.15, 1);
         if (e.hp <= 0) {
-          e.alive = false;
+          e.dying = true;
+          e.deathTimer = 0.4;
           game.enemiesKilled++;
           game.totalKills++;
           game.score += e.score;
-          const col = PALETTES[e.sprite] ? PALETTES[e.sprite][2] : '#ff4444';
-          spawnParticles(e.x, e.y, e.boss ? 30 : 10, col, e.boss ? 150 : 100, e.boss ? 0.6 : 0.4);
           createFloatingText(e.x, e.y - 10, '+' + e.score, '#ffff44');
-          triggerShake(e.boss ? 8 : 2, e.boss ? 0.3 : 0.08);
         } else {
+          if (e.boss && e.phase === 0 && e.hp / e.bossHpMax < 0.5) {
+            e.phase = 1;
+            e.speed *= 1.3;
+            e.flash = 0.2;
+            triggerShake(6, 0.2);
+            spawnParticles(e.x, e.y, 15, '#ff4444', 120, 0.4, 2);
+          }
           triggerShake(1, 0.04);
         }
         break;
@@ -709,22 +829,18 @@ function updatePlaying(dt) {
   }
 
   // Collisions: enemies vs player
-  if (p.invincible <= 0) {
+  if (p.invincible <= 0 && !p.dying) {
     for (const e of game.enemies) {
-      if (!e.alive) continue;
+      if (!e.alive || e.dying) continue;
       if (dist(e.x, e.y, p.x, p.y) < e.radius + 6) {
         p.hp--;
         p.invincible = INVINCIBLE_TIME;
         spawnParticles(p.x, p.y, 6, '#ff4444', 60, 0.3, 2);
         triggerShake(5, 0.15);
         if (p.hp <= 0) {
-          spawnParticles(p.x, p.y, 25, '#33ff66', 120, 0.5, 2);
-          game.state = 'GAME_OVER';
-          if (game.score > game.highScore) {
-            game.highScore = game.score;
-            try { localStorage.setItem('pb-highscore', game.highScore); } catch {}
-          }
-          return;
+          p.dying = true;
+          p.deathTimer = 0.6;
+          game.state = 'PLAYER_DYING';
         }
         break;
       }
@@ -732,7 +848,7 @@ function updatePlaying(dt) {
   }
 
   // Collisions: enemy bullets vs player
-  if (p.invincible <= 0) {
+  if (p.invincible <= 0 && !p.dying) {
     for (const b of game.bullets) {
       if (!b.alive || !b.isEnemy) continue;
       if (dist(b.x, b.y, p.x, p.y) < 8) {
@@ -742,13 +858,9 @@ function updatePlaying(dt) {
         spawnParticles(p.x, p.y, 6, '#ff4444', 60, 0.3, 2);
         triggerShake(5, 0.15);
         if (p.hp <= 0) {
-          spawnParticles(p.x, p.y, 25, '#33ff66', 120, 0.5, 2);
-          game.state = 'GAME_OVER';
-          if (game.score > game.highScore) {
-            game.highScore = game.score;
-            try { localStorage.setItem('pb-highscore', game.highScore); } catch {}
-          }
-          return;
+          p.dying = true;
+          p.deathTimer = 0.6;
+          game.state = 'PLAYER_DYING';
         }
         break;
       }
@@ -780,6 +892,34 @@ function updateTransition(dt) {
   }
 }
 
+function updatePlayerDying(dt) {
+  const p = game.player;
+  p.deathTimer -= dt;
+  // Keep particles and dying enemies updating
+  for (const pt of game.particles) {
+    if (!pt.alive) continue;
+    pt.x += pt.vx * dt;
+    pt.y += pt.vy * dt;
+    pt.life -= dt;
+    if (pt.life <= 0) pt.alive = false;
+  }
+  for (const e of game.enemies) {
+    if (!e.alive) continue;
+    if (e.dying) {
+      e.deathTimer -= dt;
+      if (e.deathTimer <= 0) e.alive = false;
+    }
+  }
+  if (p.deathTimer <= 0) {
+    spawnParticles(p.x, p.y, 25, '#33ff66', 120, 0.5, 2);
+    game.state = 'GAME_OVER';
+    if (game.score > game.highScore) {
+      game.highScore = game.score;
+      try { localStorage.setItem('pb-highscore', game.highScore); } catch {}
+    }
+  }
+}
+
 // ============================================================
 // SECTION 9: RENDER FUNCTIONS
 // ============================================================
@@ -798,26 +938,37 @@ function renderBackground() {
 
 function renderPlayer() {
   const p = game.player;
+  if (p.dying) {
+    const progress = 1 - (p.deathTimer / 0.6);
+    const scale = 2 * (1 - progress);
+    if (scale < 0.2) return;
+    const flash = Math.floor(progress * 10) % 2 === 0;
+    const spriteData = SPRITES.player[0];
+    drawSprite(spriteData, PALETTES.player, p.x, p.y, p.angle + Math.PI / 2, scale, flash);
+    return;
+  }
   if (p.invincible > 0 && Math.floor(p.invincible * 16) % 2 === 0) return;
 
+  const breathY = p.moving ? 0 : Math.sin(performance.now() / 400) * 0.8;
   const spriteData = SPRITES.player[p.animFrame];
-  drawSprite(spriteData, PALETTES.player, p.x, p.y, p.angle + Math.PI / 2, 2, false);
+  drawSprite(spriteData, PALETTES.player, p.x, p.y + breathY, p.angle + Math.PI / 2, 2, false);
 
   // Gun
   ctx.save();
-  ctx.translate(Math.round(p.x), Math.round(p.y));
+  ctx.translate(Math.round(p.x), Math.round(p.y + breathY));
   ctx.rotate(p.angle);
   ctx.fillStyle = C.GUN_DARK;
-  ctx.fillRect(6, -3, 10, 6);
+  ctx.fillRect(6 - p.recoilOffset, -3, 10, 6);
   ctx.fillStyle = C.GUN;
-  ctx.fillRect(7, -2, 8, 4);
+  ctx.fillRect(7 - p.recoilOffset, -2, 8, 4);
   ctx.restore();
 
   // Muzzle flash
   if (p.muzzleFlash > 0) {
     const tipX = p.x + Math.cos(p.angle) * 16;
     const tipY = p.y + Math.sin(p.angle) * 16;
-    ctx.globalAlpha = p.muzzleFlash / 0.06;
+    const alpha = p.muzzleFlash / 0.06;
+    ctx.globalAlpha = alpha;
     ctx.fillStyle = '#ffffff';
     ctx.beginPath();
     ctx.arc(tipX, tipY, 5, 0, Math.PI * 2);
@@ -826,6 +977,15 @@ function renderPlayer() {
     ctx.beginPath();
     ctx.arc(tipX, tipY, 3, 0, Math.PI * 2);
     ctx.fill();
+    for (let i = 0; i < 3; i++) {
+      const sa = p.angle + (i - 1) * 0.4;
+      ctx.fillStyle = '#ffff88';
+      ctx.save();
+      ctx.translate(tipX, tipY);
+      ctx.rotate(sa);
+      ctx.fillRect(2, -0.5, 4 * alpha, 1);
+      ctx.restore();
+    }
     ctx.globalAlpha = 1;
   }
 }
@@ -836,8 +996,27 @@ function renderEnemies() {
     const sprite = SPRITES[e.sprite];
     if (!sprite) continue;
     const pal = PALETTES[e.sprite];
-    const scale = e.boss ? 3 : 2;
-    drawSprite(sprite[0], pal, e.x, e.y, e.angle + Math.PI / 2, scale, e.flash > 0);
+    let scale = e.boss ? 3 : 2;
+    let flash = e.flash > 0;
+    let drawX = e.x;
+    let drawY = e.y;
+
+    if (e.dying) {
+      const progress = 1 - (e.deathTimer / 0.4);
+      scale *= (1 - progress);
+      flash = Math.floor(progress * 8) % 2 === 0;
+      if (scale < 0.2) continue;
+    }
+
+    if (e.type === 1 && e.chargeState === 'windup') {
+      drawX += (Math.random() - 0.5) * 2;
+      drawY += (Math.random() - 0.5) * 2;
+    }
+
+    const frameIdx = e.animFrame % sprite.length;
+    drawSprite(sprite[frameIdx], pal, drawX, drawY, e.angle + Math.PI / 2, scale, flash);
+
+    if (e.dying) continue;
 
     // Shooter turret indicator
     if (e.type === 3 || e.boss) {
@@ -865,14 +1044,20 @@ function renderEnemies() {
       ctx.strokeRect(bx, by, bw, bh);
     }
 
-    // Boss pulsing outline
-    if (e.boss) {
-      const pulse = 0.5 + Math.sin(performance.now() / 150) * 0.5;
-      ctx.strokeStyle = `rgba(255, 68, 68, ${pulse * 0.6})`;
-      ctx.lineWidth = 2;
-      ctx.beginPath();
-      ctx.arc(e.x, e.y, e.radius + 4, 0, Math.PI * 2);
-      ctx.stroke();
+    // Boss aura particles
+    if (e.boss && Math.random() < 0.3) {
+      const auraAngle = Math.random() * Math.PI * 2;
+      const auraR = e.radius + 4;
+      spawnParticles(
+        e.x + Math.cos(auraAngle) * auraR,
+        e.y + Math.sin(auraAngle) * auraR,
+        1, e.phase === 1 ? '#ff6644' : '#ff4444', 20, 0.25, 1
+      );
+    }
+
+    // Dasher windup indicator
+    if (e.type === 1 && e.chargeState === 'windup') {
+      drawText('!', drawX - 2, drawY - 14, 1, '#ffff44');
     }
   }
 }
@@ -1082,6 +1267,7 @@ function gameLoop(timestamp) {
 
   // Update
   if (game.state === 'PLAYING') updatePlaying(dt);
+  else if (game.state === 'PLAYER_DYING') updatePlayerDying(dt);
   else if (game.state === 'LEVEL_TRANSITION') updateTransition(dt);
   else if (game.state === 'MENU') game.menuTime += dt;
 
@@ -1105,6 +1291,14 @@ function gameLoop(timestamp) {
     renderHUD();
   } else if (game.state === 'LEVEL_TRANSITION') {
     renderTransition();
+  } else if (game.state === 'PLAYER_DYING') {
+    renderBackground();
+    renderBullets();
+    renderEnemies();
+    renderPlayer();
+    renderParticles();
+    renderFloatingTexts();
+    renderHUD();
   } else if (game.state === 'GAME_OVER') {
     renderBackground();
     renderParticles();
