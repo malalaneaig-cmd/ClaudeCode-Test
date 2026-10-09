@@ -59,6 +59,6 @@ Each game is one HTML file containing all markup, styles, and logic inline. Ther
 
 ## Git Workflow
 
-- Commit work to Git regularly with clean, descriptive commit messages so progress is never lost.
-- Push commits to GitHub frequently to keep the remote up to date.
-- Don't batch large changes into a single commit — commit incrementally as meaningful units of work are completed.
+- **Commit and push after every meaningful change.** As you work, commit to Git and push to GitHub regularly so we never lose progress. Don't wait until the end of a task — commit incrementally as each unit of work is completed.
+- Write clean, descriptive commit messages that explain *why*, not just *what*.
+- Don't batch large changes into a single commit — smaller, focused commits are easier to revert if needed.
